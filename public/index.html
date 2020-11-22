@@ -19,12 +19,18 @@
         canvas{
             position: absolute;
         }
+        #video {
+            margin-top: 90px;
+        }
     </style>
 </head>
 <body>
-    <video id="video" width="720" height="560" autoplay muted></video>
+    <video id="video" width="720" height="560" autoplay playsinline muted></video>
 
     <script src="/js/face-api.min.js"></script>
     <script src="/js/script.js"></script>
+    Write your name: <input type=text id="name" size=20>
+    Write your surname: <input type=text id="surname" size=20>
+    
 </body>
 </html>
