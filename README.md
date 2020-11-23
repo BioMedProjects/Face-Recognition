@@ -16,5 +16,7 @@ node src/server.js
 
 or nodeamon src/server.js 
 
+app will run on localhost:3000
+
 This app stores all data in sqllite3 file. 
 
