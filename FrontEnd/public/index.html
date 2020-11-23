@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="theme-color" content="#000000" />
     <title>Face Recognition and Verification Software</title>
     <!--<base rel="stylesheet" href="/css/style.css"/>-->
-    <style>
+    <!-- <style>
         body {
             margin: 0;
             padding: 0;
@@ -22,15 +25,22 @@
         #video {
             margin-top: 90px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <video id="video" width="720" height="560" autoplay playsinline muted></video>
+    <form>
+        <label>Write your name:</label>
+        <input class="form-control" type=text id="name" size=20>
+        <label>Write your surname:</label>
+        <input class="form-control" type=text id="surname" size=20>
+        <br>
+        <div class="buttons">
+            <button class="btn btn-primary" id="button" type="submit">Dodaj</button>
+        </div>
+    </form>
 
     <script src="/js/face-api.min.js"></script>
     <script src="/js/script.js"></script>
-    Write your name: <input type=text id="name" size=20>
-    Write your surname: <input type=text id="surname" size=20>
-    
 </body>
 </html>

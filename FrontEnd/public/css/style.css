@@ -11,3 +11,11 @@ body {
 canvas{
   position: absolute;
 }
+#video {
+  margin-top: 175px;
+}
+.buttons {
+  position:flex;
+  align-items: center;
+  margin-left: 33%;
+}

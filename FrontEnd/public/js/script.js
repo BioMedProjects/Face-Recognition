@@ -29,11 +29,7 @@ async function recognizeFace(){
     document.body.append(canvas)
     const displaySize = { width: video.width, height: video.height }
     faceapi.matchDimensions(canvas, displaySize)
-    const button = document.createElement('BUTTON');
-    var text = document.createTextNode("Dodaj");
-    button.appendChild(text); 
-    document.body.append(button);
-
+    const button = document.getElementById('button');
   
     setInterval(async () => {
       const detections = await faceapi.detectAllFaces(video).withFaceLandmarks().withFaceDescriptors()
