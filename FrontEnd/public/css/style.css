@@ -12,7 +12,8 @@ canvas{
   position: absolute;
 }
 #video {
-  margin-top: 175px;
+  /*margin-top: 220px;*/
+  margin-top: 140px;
 }
 .buttons {
   position:flex;

@@ -8,7 +8,7 @@ def save_descriptor(request):
     if request.method == 'POST':
         serializer = DescriptorSerializer()
         serializer.create(validated_data=request.data)
-    return Response({"oj byczku": "poszło"})
+    return Response({"test": "poszło"})
 
 
 @api_view(['GET'])
